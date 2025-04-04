@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly Emirates Airways - Book Flights Worldwide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="fly.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="C:\Users\JOSHUA AMPONSAH\Downloads\globe.png" alt="Global Airways Logo">
+                <h1>Fly Emirates Airways</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flights</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="loginBtn">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Explore The World With Us</h2>
+            <p>Book your next adventure with Fly Emirates Airways and experience world-class service to over 200 destinations worldwide.</p>
+            <button class="search-btn">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Flight Search Section -->
+    <section class="container">
+        <div class="flight-search">
+            <div class="search-tabs">
+                <div class="search-tab active">Round Trip</div>
+                <div class="search-tab">One Way</div>
+                <div class="search-tab">Multi-City</div>
+            </div>
+            <form class="search-form" id="flightSearchForm">
+                <div class="form-group">
+                    <label for="from">From</label>
+                    <input type="text" id="from" placeholder="City or Airport" required>
+                </div>
+                <div class="form-group">
+                    <label for="to">To</label>
+                    <input type="text" id="to" placeholder="City or Airport" required>
+                </div>
+                <div class="form-group">
+                    <label for="departure">Departure</label>
+                    <input type="date" id="departure" required>
+                </div>
+                <div class="form-group">
+                    <label for="return">Return</label>
+                    <input type="date" id="return">
+                </div>
+                <div class="form-group">
+                    <label for="passengers">Passengers</label>
+                    <select id="passengers">
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="class">Class</label>
+                    <select id="class">
+                        <option value="economy">Economy</option>
+                        <option value="premium">Premium Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First Class</option>
+                    </select>
+                </div>
+                <button type="submit" class="search-btn">Search Flights</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="popular-destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular Destinations</h2>
+                <p>Discover our most popular flight destinations around the world</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80" alt="Paris">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Paris, France</h3>
+                        <p>The city of love and lights awaits you with its romantic charm.</p>
+                        <div class="destination-price">
+                            <span class="price">$499</span>
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\tokyojapan.jpg" alt="Tokyo">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Experience the perfect blend of tradition and modernity.</p>
+                        <div class="destination-price">
+                            <span class="price">$899</span>
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="New York">
+                    </div>
+                    <div class="destination-info">
+                        <h3>New York, USA</h3>
+                        <p>The city that never sleeps offers endless possibilities.</p>
+                        <div class="destination-price">
+                            <span class="price">$599</span>
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80" alt="Sydney">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Sydney, Australia</h3>
+                        <p>Stunning beaches and iconic landmarks await down under.</p>
+                        <div class="destination-price">
+                            <span class="price">$1099</span>
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\ghana.jpg" alt="Ghana">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Accra, Ghana</h3>
+                        <p>Stunning beaches and iconic landmarks await down under.</p>
+                        <div class="destination-price">
+                            <span class="price">Ghc2500</span>
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\canada.jpg" alt="Canada">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Toronto, Canada</h3>
+                        <p>Stunning beaches and iconic landmarks await down under.</p>
+                        <div class="destination-price">
+                            <span class="price">$1505</span>
+                            <button class="book-now">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Fly Emirates Airways</h2>
+                <p>We're committed to making your journey as comfortable and enjoyable as possible</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>200+ Destinations</h3>
+                    <p>Fly to over 200 destinations across all continents with our extensive network.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Award-Winning Service</h3>
+                    <p>Consistently rated among the top airlines for customer satisfaction.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Free WiFi</h3>
+                    <p>Stay connected with complimentary WiFi on all long-haul flights.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Gourmet Dining</h3>
+                    <p>Enjoy chef-curated meals inspired by global cuisines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Customers Say</h2>
+                <p>Hear from travelers who've flown with us around the world</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Fly Emirates Airways made my trip to Japan seamless. The service was impeccable and the flight was incredibly comfortable. Will definitely fly with them again!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Frequent Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "As a business traveler, I appreciate the reliability and excellent onboard amenities. The lie-flat seats in business class are game-changing for long flights."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Business Executive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-text">
+                        "Traveling with my family was stress-free thanks to the attentive crew and family-friendly services. The kids loved the entertainment options!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Lisa Rodriguez">
+                        </div>
+                        <div class="author-info">
+                            <h4>Lisa Rodriguez</h4>
+                            <p>Family Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="section-title">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive deals and travel inspiration</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Fly Emirates Airways</h3>
+                    <p>Fly Emirates Airways is a leading international airline committed to providing exceptional service and connecting people across the world.</p>
+                    <div class="social-links">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\1298747_instagram_brand_logo_social media_icon.png" width="40" height="40">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\317727_facebook_social media_social_icon.png" width="40" height="40">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\317714_video_youtube_icon.png" width="40" height="40">
+                        <img src="C:\Users\JOSHUA AMPONSAH\Downloads\5296516_tweet_twitter_twitter logo_icon.png" width="40" height="40">
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Book a Flight</a></li>
+                        <li><a href="#">Flight Status</a></li>
+                        <li><a href="#">Manage Booking</a></li>
+                        <li><a href="#">Check-In</a></li>
+                        <li><a href="#">Flight Schedules</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press Center</a></li>
+                        <li><a href="#">Travel Agents</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Aviation Way, New York, NY 10001</li>
+                        <li><i class="fas fa-phone"></i> +233 59 784 9292</li>
+                        <li><i class="fas fa-envelope"></i> info@flyemiratesairways.com</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Customer Service</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fly Emirates Airways. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+</html>
